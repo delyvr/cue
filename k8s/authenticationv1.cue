@@ -9,12 +9,12 @@ import (
 
 v1:  #TokenReview: kube.#TokenReview
 v1:  #TokenReview: {
-	Kind: "TokenReview"
+	kind: "TokenReview"
 	apiVersion: "authentication/v1"
 }
 
 v1:  #TokenRequest: kube.#TokenRequest
 v1:  #TokenRequest: {
-	Kind: "TokenRequest"
+	kind: "TokenRequest"
 	apiVersion: "authentication/v1"
 }

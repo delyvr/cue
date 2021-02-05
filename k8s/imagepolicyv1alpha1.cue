@@ -9,6 +9,6 @@ import (
 
 v1alpha1:  #ImageReview: kube.#ImageReview
 v1alpha1:  #ImageReview: {
-	Kind: "ImageReview"
+	kind: "ImageReview"
 	apiVersion: "imagepolicy/v1alpha1"
 }

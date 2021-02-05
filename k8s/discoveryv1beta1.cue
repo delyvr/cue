@@ -9,6 +9,6 @@ import (
 
 v1beta1:  #EndpointSlice: kube.#EndpointSlice
 v1beta1:  #EndpointSlice: {
-	Kind: "EndpointSlice"
+	kind: "EndpointSlice"
 	apiVersion: "discovery/v1beta1"
 }

@@ -9,6 +9,6 @@ import (
 
 v2beta1:  #HorizontalPodAutoscaler: kube.#HorizontalPodAutoscaler
 v2beta1:  #HorizontalPodAutoscaler: {
-	Kind: "HorizontalPodAutoscaler"
+	kind: "HorizontalPodAutoscaler"
 	apiVersion: "autoscaling/v2beta1"
 }

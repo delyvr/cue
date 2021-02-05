@@ -163,7 +163,7 @@ import (
 const k8sTypeTemplate = `
 {{ .Prefix }} #{{.Name}}: kube.#{{.Name}}
 {{ .Prefix }} #{{.Name}}: {
-	Kind: "{{.Name}}"
+	kind: "{{.Name}}"
 	apiVersion: "{{ .ApiVersion }}"
 }
 `

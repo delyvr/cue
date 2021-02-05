@@ -9,18 +9,18 @@ import (
 
 v1:  #NetworkPolicy: kube.#NetworkPolicy
 v1:  #NetworkPolicy: {
-	Kind: "NetworkPolicy"
+	kind: "NetworkPolicy"
 	apiVersion: "networking/v1"
 }
 
 v1:  #Ingress: kube.#Ingress
 v1:  #Ingress: {
-	Kind: "Ingress"
+	kind: "Ingress"
 	apiVersion: "networking/v1"
 }
 
 v1:  #IngressClass: kube.#IngressClass
 v1:  #IngressClass: {
-	Kind: "IngressClass"
+	kind: "IngressClass"
 	apiVersion: "networking/v1"
 }

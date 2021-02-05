@@ -9,6 +9,6 @@ import (
 
 v1:  #Lease: kube.#Lease
 v1:  #Lease: {
-	Kind: "Lease"
+	kind: "Lease"
 	apiVersion: "coordination/v1"
 }

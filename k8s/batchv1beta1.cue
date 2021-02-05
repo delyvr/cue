@@ -9,12 +9,12 @@ import (
 
 v1beta1:  #JobTemplate: kube.#JobTemplate
 v1beta1:  #JobTemplate: {
-	Kind: "JobTemplate"
+	kind: "JobTemplate"
 	apiVersion: "batch/v1beta1"
 }
 
 v1beta1:  #CronJob: kube.#CronJob
 v1beta1:  #CronJob: {
-	Kind: "CronJob"
+	kind: "CronJob"
 	apiVersion: "batch/v1beta1"
 }

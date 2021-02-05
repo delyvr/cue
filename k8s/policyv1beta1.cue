@@ -9,18 +9,18 @@ import (
 
 v1beta1:  #PodDisruptionBudget: kube.#PodDisruptionBudget
 v1beta1:  #PodDisruptionBudget: {
-	Kind: "PodDisruptionBudget"
+	kind: "PodDisruptionBudget"
 	apiVersion: "policy/v1beta1"
 }
 
 v1beta1:  #Eviction: kube.#Eviction
 v1beta1:  #Eviction: {
-	Kind: "Eviction"
+	kind: "Eviction"
 	apiVersion: "policy/v1beta1"
 }
 
 v1beta1:  #PodSecurityPolicy: kube.#PodSecurityPolicy
 v1beta1:  #PodSecurityPolicy: {
-	Kind: "PodSecurityPolicy"
+	kind: "PodSecurityPolicy"
 	apiVersion: "policy/v1beta1"
 }

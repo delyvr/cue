@@ -9,6 +9,6 @@ import (
 
 v1alpha1:  #StorageVersion: kube.#StorageVersion
 v1alpha1:  #StorageVersion: {
-	Kind: "StorageVersion"
+	kind: "StorageVersion"
 	apiVersion: "apiserverinternal/v1alpha1"
 }

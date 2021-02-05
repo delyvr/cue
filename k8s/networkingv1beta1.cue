@@ -9,12 +9,12 @@ import (
 
 v1beta1:  #Ingress: kube.#Ingress
 v1beta1:  #Ingress: {
-	Kind: "Ingress"
+	kind: "Ingress"
 	apiVersion: "networking/v1beta1"
 }
 
 v1beta1:  #IngressClass: kube.#IngressClass
 v1beta1:  #IngressClass: {
-	Kind: "IngressClass"
+	kind: "IngressClass"
 	apiVersion: "networking/v1beta1"
 }

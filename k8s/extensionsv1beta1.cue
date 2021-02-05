@@ -9,48 +9,48 @@ import (
 
 v1beta1:  #Scale: kube.#Scale
 v1beta1:  #Scale: {
-	Kind: "Scale"
+	kind: "Scale"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #Deployment: kube.#Deployment
 v1beta1:  #Deployment: {
-	Kind: "Deployment"
+	kind: "Deployment"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #DeploymentRollback: kube.#DeploymentRollback
 v1beta1:  #DeploymentRollback: {
-	Kind: "DeploymentRollback"
+	kind: "DeploymentRollback"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #DaemonSet: kube.#DaemonSet
 v1beta1:  #DaemonSet: {
-	Kind: "DaemonSet"
+	kind: "DaemonSet"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #Ingress: kube.#Ingress
 v1beta1:  #Ingress: {
-	Kind: "Ingress"
+	kind: "Ingress"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #ReplicaSet: kube.#ReplicaSet
 v1beta1:  #ReplicaSet: {
-	Kind: "ReplicaSet"
+	kind: "ReplicaSet"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #PodSecurityPolicy: kube.#PodSecurityPolicy
 v1beta1:  #PodSecurityPolicy: {
-	Kind: "PodSecurityPolicy"
+	kind: "PodSecurityPolicy"
 	apiVersion: "extensions/v1beta1"
 }
 
 v1beta1:  #NetworkPolicy: kube.#NetworkPolicy
 v1beta1:  #NetworkPolicy: {
-	Kind: "NetworkPolicy"
+	kind: "NetworkPolicy"
 	apiVersion: "extensions/v1beta1"
 }

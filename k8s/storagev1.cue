@@ -9,24 +9,24 @@ import (
 
 v1:  #StorageClass: kube.#StorageClass
 v1:  #StorageClass: {
-	Kind: "StorageClass"
+	kind: "StorageClass"
 	apiVersion: "storage/v1"
 }
 
 v1:  #VolumeAttachment: kube.#VolumeAttachment
 v1:  #VolumeAttachment: {
-	Kind: "VolumeAttachment"
+	kind: "VolumeAttachment"
 	apiVersion: "storage/v1"
 }
 
 v1:  #CSIDriver: kube.#CSIDriver
 v1:  #CSIDriver: {
-	Kind: "CSIDriver"
+	kind: "CSIDriver"
 	apiVersion: "storage/v1"
 }
 
 v1:  #CSINode: kube.#CSINode
 v1:  #CSINode: {
-	Kind: "CSINode"
+	kind: "CSINode"
 	apiVersion: "storage/v1"
 }

@@ -9,12 +9,12 @@ import (
 
 v1:  #ValidatingWebhookConfiguration: kube.#ValidatingWebhookConfiguration
 v1:  #ValidatingWebhookConfiguration: {
-	Kind: "ValidatingWebhookConfiguration"
+	kind: "ValidatingWebhookConfiguration"
 	apiVersion: "admissionregistration/v1"
 }
 
 v1:  #MutatingWebhookConfiguration: kube.#MutatingWebhookConfiguration
 v1:  #MutatingWebhookConfiguration: {
-	Kind: "MutatingWebhookConfiguration"
+	kind: "MutatingWebhookConfiguration"
 	apiVersion: "admissionregistration/v1"
 }

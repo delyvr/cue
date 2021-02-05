@@ -9,6 +9,6 @@ import (
 
 v1:  #CertificateSigningRequest: kube.#CertificateSigningRequest
 v1:  #CertificateSigningRequest: {
-	Kind: "CertificateSigningRequest"
+	kind: "CertificateSigningRequest"
 	apiVersion: "certificates/v1"
 }

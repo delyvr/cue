@@ -9,6 +9,6 @@ import (
 
 v1:  #AdmissionReview: kube.#AdmissionReview
 v1:  #AdmissionReview: {
-	Kind: "AdmissionReview"
+	kind: "AdmissionReview"
 	apiVersion: "admission/v1"
 }

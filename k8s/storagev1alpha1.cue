@@ -9,12 +9,12 @@ import (
 
 v1alpha1:  #VolumeAttachment: kube.#VolumeAttachment
 v1alpha1:  #VolumeAttachment: {
-	Kind: "VolumeAttachment"
+	kind: "VolumeAttachment"
 	apiVersion: "storage/v1alpha1"
 }
 
 v1alpha1:  #CSIStorageCapacity: kube.#CSIStorageCapacity
 v1alpha1:  #CSIStorageCapacity: {
-	Kind: "CSIStorageCapacity"
+	kind: "CSIStorageCapacity"
 	apiVersion: "storage/v1alpha1"
 }

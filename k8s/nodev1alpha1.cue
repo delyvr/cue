@@ -9,6 +9,6 @@ import (
 
 v1alpha1:  #RuntimeClass: kube.#RuntimeClass
 v1alpha1:  #RuntimeClass: {
-	Kind: "RuntimeClass"
+	kind: "RuntimeClass"
 	apiVersion: "node/v1alpha1"
 }

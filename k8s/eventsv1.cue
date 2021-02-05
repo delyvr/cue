@@ -9,6 +9,6 @@ import (
 
 v1:  #Event: kube.#Event
 v1:  #Event: {
-	Kind: "Event"
+	kind: "Event"
 	apiVersion: "events/v1"
 }

@@ -9,24 +9,24 @@ import (
 
 v1beta1:  #Role: kube.#Role
 v1beta1:  #Role: {
-	Kind: "Role"
+	kind: "Role"
 	apiVersion: "rbac/v1beta1"
 }
 
 v1beta1:  #RoleBinding: kube.#RoleBinding
 v1beta1:  #RoleBinding: {
-	Kind: "RoleBinding"
+	kind: "RoleBinding"
 	apiVersion: "rbac/v1beta1"
 }
 
 v1beta1:  #ClusterRole: kube.#ClusterRole
 v1beta1:  #ClusterRole: {
-	Kind: "ClusterRole"
+	kind: "ClusterRole"
 	apiVersion: "rbac/v1beta1"
 }
 
 v1beta1:  #ClusterRoleBinding: kube.#ClusterRoleBinding
 v1beta1:  #ClusterRoleBinding: {
-	Kind: "ClusterRoleBinding"
+	kind: "ClusterRoleBinding"
 	apiVersion: "rbac/v1beta1"
 }

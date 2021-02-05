@@ -9,30 +9,30 @@ import (
 
 v1beta1:  #Scale: kube.#Scale
 v1beta1:  #Scale: {
-	Kind: "Scale"
+	kind: "Scale"
 	apiVersion: "apps/v1beta1"
 }
 
 v1beta1:  #StatefulSet: kube.#StatefulSet
 v1beta1:  #StatefulSet: {
-	Kind: "StatefulSet"
+	kind: "StatefulSet"
 	apiVersion: "apps/v1beta1"
 }
 
 v1beta1:  #Deployment: kube.#Deployment
 v1beta1:  #Deployment: {
-	Kind: "Deployment"
+	kind: "Deployment"
 	apiVersion: "apps/v1beta1"
 }
 
 v1beta1:  #DeploymentRollback: kube.#DeploymentRollback
 v1beta1:  #DeploymentRollback: {
-	Kind: "DeploymentRollback"
+	kind: "DeploymentRollback"
 	apiVersion: "apps/v1beta1"
 }
 
 v1beta1:  #ControllerRevision: kube.#ControllerRevision
 v1beta1:  #ControllerRevision: {
-	Kind: "ControllerRevision"
+	kind: "ControllerRevision"
 	apiVersion: "apps/v1beta1"
 }

@@ -9,6 +9,6 @@ import (
 
 v1:  #Job: kube.#Job
 v1:  #Job: {
-	Kind: "Job"
+	kind: "Job"
 	apiVersion: "batch/v1"
 }

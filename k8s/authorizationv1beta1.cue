@@ -9,24 +9,24 @@ import (
 
 v1beta1:  #SubjectAccessReview: kube.#SubjectAccessReview
 v1beta1:  #SubjectAccessReview: {
-	Kind: "SubjectAccessReview"
+	kind: "SubjectAccessReview"
 	apiVersion: "authorization/v1beta1"
 }
 
 v1beta1:  #SelfSubjectAccessReview: kube.#SelfSubjectAccessReview
 v1beta1:  #SelfSubjectAccessReview: {
-	Kind: "SelfSubjectAccessReview"
+	kind: "SelfSubjectAccessReview"
 	apiVersion: "authorization/v1beta1"
 }
 
 v1beta1:  #LocalSubjectAccessReview: kube.#LocalSubjectAccessReview
 v1beta1:  #LocalSubjectAccessReview: {
-	Kind: "LocalSubjectAccessReview"
+	kind: "LocalSubjectAccessReview"
 	apiVersion: "authorization/v1beta1"
 }
 
 v1beta1:  #SelfSubjectRulesReview: kube.#SelfSubjectRulesReview
 v1beta1:  #SelfSubjectRulesReview: {
-	Kind: "SelfSubjectRulesReview"
+	kind: "SelfSubjectRulesReview"
 	apiVersion: "authorization/v1beta1"
 }
