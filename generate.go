@@ -190,7 +190,7 @@ func includeType(typ string) bool {
 func replaceImports(path string, prefix string) {
 	files := getFilesIn(path)
 
-	singleLineImport := regexp.MustCompile(".*import \"([a-zA-Z0-9./]+)\"")
+	singleLineImport := regexp.MustCompile(".*import (?:[a-zA-z0-9_]* )?\"([a-zA-Z0-9./]+)\"")
 	importString := regexp.MustCompile("\"([a-zA-Z0-9./]+)\"")
 
 	for _, filePath := range files {
