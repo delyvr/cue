@@ -2,17 +2,18 @@ package starter
 
 import (
     "github.com/delyvr/cue/k8s:apps"
-    "github.com/delyvr/cue/k8s:core"
 )
 
 #Deployment: apps.v1.#Deployment
 #Deployment: {
     #name: string
-    #namespace: string | core.v1.#NamespaceDefault
-    #labels: {[string]: string} | null
-    #replicas: int | *1
     #image: string
+    #replicas: int | *1
     #port: int | *80
+    
+    #namespace?: string
+    #labels: {[string]: string} | null
+    
 
     metadata: {
         name: #name
@@ -21,14 +22,15 @@ import (
     }
     spec: {
         replicas: #replicas
-        labelSelector: {
+        selector: {
             matchLabels: {
                 "app": #name
             }
         }
         template: {
             metadata: {
-                labels: #labels & {
+                labels: {
+                    #labels
                     "app": #name
                 }
             }
