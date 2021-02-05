@@ -1,4 +1,4 @@
-package "github.com/delyvr/cue/test"
+package "test"
 
 #Definition: {
 	test: string
