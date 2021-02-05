@@ -1,13 +1,14 @@
 package starter
 
 import (
-    kube "github.com/delyvr/cue/k8s"
+    "github.com/delyvr/cue/k8s:apps"
+    "github.com/delyvr/cue/k8s:core"
 )
 
-#Deployment: kube.apps.v1.#Deployment
+#Deployment: apps.v1.#Deployment
 #Deployment: {
     #name: string
-    #namespace: string | kube.v1.#NamespaceDefault
+    #namespace: string | core.v1.#NamespaceDefault
     #labels: {[string]: string} | null
     #replicas: int | *1
     #image: string
