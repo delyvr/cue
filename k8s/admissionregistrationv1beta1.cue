@@ -7,12 +7,14 @@ import (
 )
 
 
-admissionregistration: v1beta1:  kube.#ValidatingWebhookConfiguration: {
+admissionregistration: v1beta1:  #ValidatingWebhookConfiguration: kube.#ValidatingWebhookConfiguration
+admissionregistration: v1beta1:  #ValidatingWebhookConfiguration: {
 	Kind: "ValidatingWebhookConfiguration"
 	apiVersion: "admissionregistration/v1beta1"
 }
 
-admissionregistration: v1beta1:  kube.#MutatingWebhookConfiguration: {
+admissionregistration: v1beta1:  #MutatingWebhookConfiguration: kube.#MutatingWebhookConfiguration
+admissionregistration: v1beta1:  #MutatingWebhookConfiguration: {
 	Kind: "MutatingWebhookConfiguration"
 	apiVersion: "admissionregistration/v1beta1"
 }

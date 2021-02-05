@@ -7,7 +7,8 @@ import (
 )
 
 
-scheduling: v1:  kube.#PriorityClass: {
+scheduling: v1:  #PriorityClass: kube.#PriorityClass
+scheduling: v1:  #PriorityClass: {
 	Kind: "PriorityClass"
 	apiVersion: "scheduling/v1"
 }

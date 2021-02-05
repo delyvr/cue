@@ -7,12 +7,14 @@ import (
 )
 
 
-autoscaling: v1:  kube.#HorizontalPodAutoscaler: {
+autoscaling: v1:  #HorizontalPodAutoscaler: kube.#HorizontalPodAutoscaler
+autoscaling: v1:  #HorizontalPodAutoscaler: {
 	Kind: "HorizontalPodAutoscaler"
 	apiVersion: "autoscaling/v1"
 }
 
-autoscaling: v1:  kube.#Scale: {
+autoscaling: v1:  #Scale: kube.#Scale
+autoscaling: v1:  #Scale: {
 	Kind: "Scale"
 	apiVersion: "autoscaling/v1"
 }

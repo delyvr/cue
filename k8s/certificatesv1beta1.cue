@@ -7,7 +7,8 @@ import (
 )
 
 
-certificates: v1beta1:  kube.#CertificateSigningRequest: {
+certificates: v1beta1:  #CertificateSigningRequest: kube.#CertificateSigningRequest
+certificates: v1beta1:  #CertificateSigningRequest: {
 	Kind: "CertificateSigningRequest"
 	apiVersion: "certificates/v1beta1"
 }

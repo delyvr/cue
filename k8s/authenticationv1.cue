@@ -7,12 +7,14 @@ import (
 )
 
 
-authentication: v1:  kube.#TokenReview: {
+authentication: v1:  #TokenReview: kube.#TokenReview
+authentication: v1:  #TokenReview: {
 	Kind: "TokenReview"
 	apiVersion: "authentication/v1"
 }
 
-authentication: v1:  kube.#TokenRequest: {
+authentication: v1:  #TokenRequest: kube.#TokenRequest
+authentication: v1:  #TokenRequest: {
 	Kind: "TokenRequest"
 	apiVersion: "authentication/v1"
 }

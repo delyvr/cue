@@ -7,17 +7,20 @@ import (
 )
 
 
-networking: v1:  kube.#NetworkPolicy: {
+networking: v1:  #NetworkPolicy: kube.#NetworkPolicy
+networking: v1:  #NetworkPolicy: {
 	Kind: "NetworkPolicy"
 	apiVersion: "networking/v1"
 }
 
-networking: v1:  kube.#Ingress: {
+networking: v1:  #Ingress: kube.#Ingress
+networking: v1:  #Ingress: {
 	Kind: "Ingress"
 	apiVersion: "networking/v1"
 }
 
-networking: v1:  kube.#IngressClass: {
+networking: v1:  #IngressClass: kube.#IngressClass
+networking: v1:  #IngressClass: {
 	Kind: "IngressClass"
 	apiVersion: "networking/v1"
 }

@@ -7,7 +7,8 @@ import (
 )
 
 
-coordination: v1:  kube.#Lease: {
+coordination: v1:  #Lease: kube.#Lease
+coordination: v1:  #Lease: {
 	Kind: "Lease"
 	apiVersion: "coordination/v1"
 }

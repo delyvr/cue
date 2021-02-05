@@ -7,7 +7,8 @@ import (
 )
 
 
-discovery: v1beta1:  kube.#EndpointSlice: {
+discovery: v1beta1:  #EndpointSlice: kube.#EndpointSlice
+discovery: v1beta1:  #EndpointSlice: {
 	Kind: "EndpointSlice"
 	apiVersion: "discovery/v1beta1"
 }

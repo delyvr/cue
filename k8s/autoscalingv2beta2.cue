@@ -7,7 +7,8 @@ import (
 )
 
 
-autoscaling: v2beta2:  kube.#HorizontalPodAutoscaler: {
+autoscaling: v2beta2:  #HorizontalPodAutoscaler: kube.#HorizontalPodAutoscaler
+autoscaling: v2beta2:  #HorizontalPodAutoscaler: {
 	Kind: "HorizontalPodAutoscaler"
 	apiVersion: "autoscaling/v2beta2"
 }

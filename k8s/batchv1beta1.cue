@@ -7,12 +7,14 @@ import (
 )
 
 
-batch: v1beta1:  kube.#JobTemplate: {
+batch: v1beta1:  #JobTemplate: kube.#JobTemplate
+batch: v1beta1:  #JobTemplate: {
 	Kind: "JobTemplate"
 	apiVersion: "batch/v1beta1"
 }
 
-batch: v1beta1:  kube.#CronJob: {
+batch: v1beta1:  #CronJob: kube.#CronJob
+batch: v1beta1:  #CronJob: {
 	Kind: "CronJob"
 	apiVersion: "batch/v1beta1"
 }

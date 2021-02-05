@@ -7,7 +7,8 @@ import (
 )
 
 
-node: v1alpha1:  kube.#RuntimeClass: {
+node: v1alpha1:  #RuntimeClass: kube.#RuntimeClass
+node: v1alpha1:  #RuntimeClass: {
 	Kind: "RuntimeClass"
 	apiVersion: "node/v1alpha1"
 }

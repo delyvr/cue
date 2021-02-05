@@ -7,22 +7,26 @@ import (
 )
 
 
-authorization: v1beta1:  kube.#SubjectAccessReview: {
+authorization: v1beta1:  #SubjectAccessReview: kube.#SubjectAccessReview
+authorization: v1beta1:  #SubjectAccessReview: {
 	Kind: "SubjectAccessReview"
 	apiVersion: "authorization/v1beta1"
 }
 
-authorization: v1beta1:  kube.#SelfSubjectAccessReview: {
+authorization: v1beta1:  #SelfSubjectAccessReview: kube.#SelfSubjectAccessReview
+authorization: v1beta1:  #SelfSubjectAccessReview: {
 	Kind: "SelfSubjectAccessReview"
 	apiVersion: "authorization/v1beta1"
 }
 
-authorization: v1beta1:  kube.#LocalSubjectAccessReview: {
+authorization: v1beta1:  #LocalSubjectAccessReview: kube.#LocalSubjectAccessReview
+authorization: v1beta1:  #LocalSubjectAccessReview: {
 	Kind: "LocalSubjectAccessReview"
 	apiVersion: "authorization/v1beta1"
 }
 
-authorization: v1beta1:  kube.#SelfSubjectRulesReview: {
+authorization: v1beta1:  #SelfSubjectRulesReview: kube.#SelfSubjectRulesReview
+authorization: v1beta1:  #SelfSubjectRulesReview: {
 	Kind: "SelfSubjectRulesReview"
 	apiVersion: "authorization/v1beta1"
 }

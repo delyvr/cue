@@ -7,7 +7,8 @@ import (
 )
 
 
-imagepolicy: v1alpha1:  kube.#ImageReview: {
+imagepolicy: v1alpha1:  #ImageReview: kube.#ImageReview
+imagepolicy: v1alpha1:  #ImageReview: {
 	Kind: "ImageReview"
 	apiVersion: "imagepolicy/v1alpha1"
 }

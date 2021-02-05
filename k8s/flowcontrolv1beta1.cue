@@ -7,12 +7,14 @@ import (
 )
 
 
-flowcontrol: v1beta1:  kube.#FlowSchema: {
+flowcontrol: v1beta1:  #FlowSchema: kube.#FlowSchema
+flowcontrol: v1beta1:  #FlowSchema: {
 	Kind: "FlowSchema"
 	apiVersion: "flowcontrol/v1beta1"
 }
 
-flowcontrol: v1beta1:  kube.#PriorityLevelConfiguration: {
+flowcontrol: v1beta1:  #PriorityLevelConfiguration: kube.#PriorityLevelConfiguration
+flowcontrol: v1beta1:  #PriorityLevelConfiguration: {
 	Kind: "PriorityLevelConfiguration"
 	apiVersion: "flowcontrol/v1beta1"
 }

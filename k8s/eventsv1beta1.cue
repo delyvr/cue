@@ -7,7 +7,8 @@ import (
 )
 
 
-events: v1beta1:  kube.#Event: {
+events: v1beta1:  #Event: kube.#Event
+events: v1beta1:  #Event: {
 	Kind: "Event"
 	apiVersion: "events/v1beta1"
 }

@@ -7,27 +7,32 @@ import (
 )
 
 
-apps: v1:  kube.#StatefulSet: {
+apps: v1:  #StatefulSet: kube.#StatefulSet
+apps: v1:  #StatefulSet: {
 	Kind: "StatefulSet"
 	apiVersion: "apps/v1"
 }
 
-apps: v1:  kube.#Deployment: {
+apps: v1:  #Deployment: kube.#Deployment
+apps: v1:  #Deployment: {
 	Kind: "Deployment"
 	apiVersion: "apps/v1"
 }
 
-apps: v1:  kube.#DaemonSet: {
+apps: v1:  #DaemonSet: kube.#DaemonSet
+apps: v1:  #DaemonSet: {
 	Kind: "DaemonSet"
 	apiVersion: "apps/v1"
 }
 
-apps: v1:  kube.#ReplicaSet: {
+apps: v1:  #ReplicaSet: kube.#ReplicaSet
+apps: v1:  #ReplicaSet: {
 	Kind: "ReplicaSet"
 	apiVersion: "apps/v1"
 }
 
-apps: v1:  kube.#ControllerRevision: {
+apps: v1:  #ControllerRevision: kube.#ControllerRevision
+apps: v1:  #ControllerRevision: {
 	Kind: "ControllerRevision"
 	apiVersion: "apps/v1"
 }

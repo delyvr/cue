@@ -7,7 +7,8 @@ import (
 )
 
 
-apiserverinternal: v1alpha1:  kube.#StorageVersion: {
+apiserverinternal: v1alpha1:  #StorageVersion: kube.#StorageVersion
+apiserverinternal: v1alpha1:  #StorageVersion: {
 	Kind: "StorageVersion"
 	apiVersion: "apiserverinternal/v1alpha1"
 }

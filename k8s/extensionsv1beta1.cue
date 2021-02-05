@@ -7,42 +7,50 @@ import (
 )
 
 
-extensions: v1beta1:  kube.#Scale: {
+extensions: v1beta1:  #Scale: kube.#Scale
+extensions: v1beta1:  #Scale: {
 	Kind: "Scale"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#Deployment: {
+extensions: v1beta1:  #Deployment: kube.#Deployment
+extensions: v1beta1:  #Deployment: {
 	Kind: "Deployment"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#DeploymentRollback: {
+extensions: v1beta1:  #DeploymentRollback: kube.#DeploymentRollback
+extensions: v1beta1:  #DeploymentRollback: {
 	Kind: "DeploymentRollback"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#DaemonSet: {
+extensions: v1beta1:  #DaemonSet: kube.#DaemonSet
+extensions: v1beta1:  #DaemonSet: {
 	Kind: "DaemonSet"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#Ingress: {
+extensions: v1beta1:  #Ingress: kube.#Ingress
+extensions: v1beta1:  #Ingress: {
 	Kind: "Ingress"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#ReplicaSet: {
+extensions: v1beta1:  #ReplicaSet: kube.#ReplicaSet
+extensions: v1beta1:  #ReplicaSet: {
 	Kind: "ReplicaSet"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#PodSecurityPolicy: {
+extensions: v1beta1:  #PodSecurityPolicy: kube.#PodSecurityPolicy
+extensions: v1beta1:  #PodSecurityPolicy: {
 	Kind: "PodSecurityPolicy"
 	apiVersion: "extensions/v1beta1"
 }
 
-extensions: v1beta1:  kube.#NetworkPolicy: {
+extensions: v1beta1:  #NetworkPolicy: kube.#NetworkPolicy
+extensions: v1beta1:  #NetworkPolicy: {
 	Kind: "NetworkPolicy"
 	apiVersion: "extensions/v1beta1"
 }

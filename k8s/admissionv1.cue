@@ -7,7 +7,8 @@ import (
 )
 
 
-admission: v1:  kube.#AdmissionReview: {
+admission: v1:  #AdmissionReview: kube.#AdmissionReview
+admission: v1:  #AdmissionReview: {
 	Kind: "AdmissionReview"
 	apiVersion: "admission/v1"
 }

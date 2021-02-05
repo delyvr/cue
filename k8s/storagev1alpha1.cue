@@ -7,12 +7,14 @@ import (
 )
 
 
-storage: v1alpha1:  kube.#VolumeAttachment: {
+storage: v1alpha1:  #VolumeAttachment: kube.#VolumeAttachment
+storage: v1alpha1:  #VolumeAttachment: {
 	Kind: "VolumeAttachment"
 	apiVersion: "storage/v1alpha1"
 }
 
-storage: v1alpha1:  kube.#CSIStorageCapacity: {
+storage: v1alpha1:  #CSIStorageCapacity: kube.#CSIStorageCapacity
+storage: v1alpha1:  #CSIStorageCapacity: {
 	Kind: "CSIStorageCapacity"
 	apiVersion: "storage/v1alpha1"
 }

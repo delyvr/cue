@@ -7,7 +7,8 @@ import (
 )
 
 
-batch: v1:  kube.#Job: {
+batch: v1:  #Job: kube.#Job
+batch: v1:  #Job: {
 	Kind: "Job"
 	apiVersion: "batch/v1"
 }

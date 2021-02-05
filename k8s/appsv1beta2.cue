@@ -7,32 +7,38 @@ import (
 )
 
 
-apps: v1beta2:  kube.#Scale: {
+apps: v1beta2:  #Scale: kube.#Scale
+apps: v1beta2:  #Scale: {
 	Kind: "Scale"
 	apiVersion: "apps/v1beta2"
 }
 
-apps: v1beta2:  kube.#StatefulSet: {
+apps: v1beta2:  #StatefulSet: kube.#StatefulSet
+apps: v1beta2:  #StatefulSet: {
 	Kind: "StatefulSet"
 	apiVersion: "apps/v1beta2"
 }
 
-apps: v1beta2:  kube.#Deployment: {
+apps: v1beta2:  #Deployment: kube.#Deployment
+apps: v1beta2:  #Deployment: {
 	Kind: "Deployment"
 	apiVersion: "apps/v1beta2"
 }
 
-apps: v1beta2:  kube.#DaemonSet: {
+apps: v1beta2:  #DaemonSet: kube.#DaemonSet
+apps: v1beta2:  #DaemonSet: {
 	Kind: "DaemonSet"
 	apiVersion: "apps/v1beta2"
 }
 
-apps: v1beta2:  kube.#ReplicaSet: {
+apps: v1beta2:  #ReplicaSet: kube.#ReplicaSet
+apps: v1beta2:  #ReplicaSet: {
 	Kind: "ReplicaSet"
 	apiVersion: "apps/v1beta2"
 }
 
-apps: v1beta2:  kube.#ControllerRevision: {
+apps: v1beta2:  #ControllerRevision: kube.#ControllerRevision
+apps: v1beta2:  #ControllerRevision: {
 	Kind: "ControllerRevision"
 	apiVersion: "apps/v1beta2"
 }

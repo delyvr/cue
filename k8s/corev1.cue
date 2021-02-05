@@ -7,102 +7,122 @@ import (
 )
 
 
-v1:  kube.#PersistentVolume: {
+v1:  #PersistentVolume: kube.#PersistentVolume
+v1:  #PersistentVolume: {
 	Kind: "PersistentVolume"
 	apiVersion: "v1"
 }
 
-v1:  kube.#PersistentVolumeClaim: {
+v1:  #PersistentVolumeClaim: kube.#PersistentVolumeClaim
+v1:  #PersistentVolumeClaim: {
 	Kind: "PersistentVolumeClaim"
 	apiVersion: "v1"
 }
 
-v1:  kube.#PodStatusResult: {
+v1:  #PodStatusResult: kube.#PodStatusResult
+v1:  #PodStatusResult: {
 	Kind: "PodStatusResult"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Pod: {
+v1:  #Pod: kube.#Pod
+v1:  #Pod: {
 	Kind: "Pod"
 	apiVersion: "v1"
 }
 
-v1:  kube.#PodTemplate: {
+v1:  #PodTemplate: kube.#PodTemplate
+v1:  #PodTemplate: {
 	Kind: "PodTemplate"
 	apiVersion: "v1"
 }
 
-v1:  kube.#ReplicationController: {
+v1:  #ReplicationController: kube.#ReplicationController
+v1:  #ReplicationController: {
 	Kind: "ReplicationController"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Service: {
+v1:  #Service: kube.#Service
+v1:  #Service: {
 	Kind: "Service"
 	apiVersion: "v1"
 }
 
-v1:  kube.#ServiceAccount: {
+v1:  #ServiceAccount: kube.#ServiceAccount
+v1:  #ServiceAccount: {
 	Kind: "ServiceAccount"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Endpoints: {
+v1:  #Endpoints: kube.#Endpoints
+v1:  #Endpoints: {
 	Kind: "Endpoints"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Node: {
+v1:  #Node: kube.#Node
+v1:  #Node: {
 	Kind: "Node"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Namespace: {
+v1:  #Namespace: kube.#Namespace
+v1:  #Namespace: {
 	Kind: "Namespace"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Binding: {
+v1:  #Binding: kube.#Binding
+v1:  #Binding: {
 	Kind: "Binding"
 	apiVersion: "v1"
 }
 
-v1:  kube.#EphemeralContainers: {
+v1:  #EphemeralContainers: kube.#EphemeralContainers
+v1:  #EphemeralContainers: {
 	Kind: "EphemeralContainers"
 	apiVersion: "v1"
 }
 
-v1:  kube.#SerializedReference: {
+v1:  #SerializedReference: kube.#SerializedReference
+v1:  #SerializedReference: {
 	Kind: "SerializedReference"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Event: {
+v1:  #Event: kube.#Event
+v1:  #Event: {
 	Kind: "Event"
 	apiVersion: "v1"
 }
 
-v1:  kube.#LimitRange: {
+v1:  #LimitRange: kube.#LimitRange
+v1:  #LimitRange: {
 	Kind: "LimitRange"
 	apiVersion: "v1"
 }
 
-v1:  kube.#ResourceQuota: {
+v1:  #ResourceQuota: kube.#ResourceQuota
+v1:  #ResourceQuota: {
 	Kind: "ResourceQuota"
 	apiVersion: "v1"
 }
 
-v1:  kube.#Secret: {
+v1:  #Secret: kube.#Secret
+v1:  #Secret: {
 	Kind: "Secret"
 	apiVersion: "v1"
 }
 
-v1:  kube.#ConfigMap: {
+v1:  #ConfigMap: kube.#ConfigMap
+v1:  #ConfigMap: {
 	Kind: "ConfigMap"
 	apiVersion: "v1"
 }
 
-v1:  kube.#RangeAllocation: {
+v1:  #RangeAllocation: kube.#RangeAllocation
+v1:  #RangeAllocation: {
 	Kind: "RangeAllocation"
 	apiVersion: "v1"
 }
