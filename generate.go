@@ -12,10 +12,10 @@ import "text/template"
 import "bytes"
 
 type pkg struct {
-	name string
+	name    string
 	cuePath string
-	pkg string
-	apiVersion string
+	pkg     string
+	version string
 }
 
 var k8sApi = map[string][]string {
@@ -45,7 +45,7 @@ var k8sApi = map[string][]string {
 
 // these apis don't behave in the same way than normally regarding synax:
 var k8sApiManual = map[string]*pkg {
-	"corev1": { "corev1", "v1: ", "k8s.io/api/core/v1", "v1"},
+	"corev1": { "core", "v1: ", "k8s.io/api/core/v1", "v1"},
 }
 
 const importPrefix = "github.com/delyvr/cue/k8s/gen/"
@@ -64,10 +64,10 @@ func main() {
 			}
 
 			generate["k8s"] = append(generate["k8s"], pkg{
-				name: api + version,
-				cuePath: api + ": " +version+ ": ",
+				name: api,
+				cuePath: version+ ": ",
 				pkg: "k8s.io/api/"+ api + "/" + version,
-				apiVersion: api + "/" + version,
+				version: version,
 			})
 		}
 
@@ -125,7 +125,7 @@ func createWrapper(name string, p pkg) {
 		PackageName string
 		PackageImport string
 	}{
-		PackageName: name,
+		PackageName: p.name,
 		PackageImport: importPrefix + p.pkg,
 	})
 	if err != nil {
@@ -140,11 +140,11 @@ func createWrapper(name string, p pkg) {
 		}{
 			Prefix: p.cuePath,
 			Name: s,
-			ApiVersion: p.apiVersion,
+			ApiVersion: p.name + "/" + p.version,
 		})
 	}
 
-	err = ioutil.WriteFile("./" + name + "/" + p.name + ".cue", b.Bytes(), os.ModePerm)
+	err = ioutil.WriteFile("./" + name + "/" + p.name + p.version + ".cue", b.Bytes(), os.ModePerm)
 	if err != nil {
 		panic(err)
 	}
